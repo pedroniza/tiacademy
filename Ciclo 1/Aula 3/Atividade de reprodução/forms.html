@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<style>
+	form{
+		background-color: tomato;
+		border: 1px solid #000;
+		width: 300px;
+		height: auto;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+	.txt{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		outline: none;
+	}
+
+	.btn{
+		background-color: lightblue;
+		border: 2px solid #FFF;
+		margin-top: 3px;
+	}
+</style>
+<body>
+	
+	<form name="frmCadastro" method="post">
+		<input class="txt" placeholder="Digite seu login" type="text" name="">
+		<input class="txt" placeholder="Digite sua senha" type="password" name="">
+		<select>
+			<option>abacate</option>
+			<option>banana</option>
+			<option>laranja</option>
+			<option>Maçã</option>
+			<option>pêra</option>
+			<option>uva</option>
+		</select>
+		<input type="checkbox" name="teste">
+		<input type="checkbox" name="teste">
+		<input type="radio" name="teste" value="">
+		<input type="radio" name="teste" value="">
+		<input type="radio" name="testes" value="">
+		<input type="radio" name="testes" value="">
+		
+		<!-- no caso do radio, é necessario que os nomes sejam iguais para escolher apenas uma opção entre as disponiveis. Caso por exemplo tenha dois nomes diferentes entre 5 opções, será possível marcar duas vezes. Note que não foi possivel marcar a primeira e a segunda opção (bem como terceira e quarta) juntas, pois tem o mesmo nome -->
+
+		<input class="btn" type="submit" name="teste">
+	</form>
+
+</body>
+</html>

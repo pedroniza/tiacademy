@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box Sizing</title>
+</head>
+<style>
+	/*raiz do doc html*/
+	:root {
+		--cor-padrao: blue;
+		--font-title: verdana, arial, cursive;
+		--font-size: 18px;
+	
+	/* -- é um padrão de identificação */
+	
+	/*o asterisco faz com que o navegador pegue todos os elementos e por numa única formatação*/
+	}
+	
+	*{
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	h1, h2, h3, ul, p {
+		font-family: var(--font-title);
+		font-size: var(--font-size);
+	}
+
+	div#teste{
+		width: 300px;
+		height: 200px;
+		border: 1px solid #000;
+		padding: 3px;
+	}
+
+	p{
+		width: 300px;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	#box{
+		width: 300px;
+		height: 200px;
+		background-color: cyan;
+		border: 1px solid #000;
+		margin-top: 5px;
+		box-sizing: border-box; /*content-box é o padrão do navegador; border-box deixará o box model na sua real medida*/
+	}
+
+</style>
+<body>
+	<h1> TESTE 1 </h1>
+	<h2> TESTE 2 </h2>
+	<h3> TESTE 3 </h3>
+	<div id="teste">
+		<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illo enim aliquam fuga exercitationem earum corrupti corporis recusandae cupiditate soluta, eveniet? Aliquid nam officiis quos laborum facilis aspernatur et modi?
+		</p>
+	</div>
+	<div id="box">
+		
+	</div>
+</body>
+</html>

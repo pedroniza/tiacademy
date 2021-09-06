@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex</title>
+</head>
+<style>
+	
+	body{
+		margin: 0;
+	}
+
+	/*main = relevância - construção de conteúdo. Não se cria outras tag main a todo momento*/
+	main{
+		background-color: tomato;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: row; /*row = lado a lado; column = em colunas*/
+		justify-content: space-between; /*between = espaçado entre os objetos, around = espaço entre os objetos e a borda*/
+	}
+
+	div{
+		width: 50px;
+		height: 50px;
+		background-color: lightblue;
+		margin: 20px;
+	}
+
+	.tam-diferente{
+		width: 200px;
+		height: 200px;
+	}
+
+</style>
+<body>
+	<main>
+
+		<div></div>
+		<div class="tam-diferente"></div>
+
+	</main>
+</body>
+</html>

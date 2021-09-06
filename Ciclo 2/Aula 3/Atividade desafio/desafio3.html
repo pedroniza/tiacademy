@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="desafio3.js"></script>
+	<title>Desafio 3</title>
+</head>
+
+<style>
+
+	#bigbox{
+
+		border: 1px solid lightgray;
+		padding: 10px 35px 10px 10px;
+		width: 340px;
+		height: auto;
+		flex-direction: row;
+	}
+
+	.posi{
+		height: 22px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px;
+	}
+
+	.txtbox{
+		width: auto;
+		height: 25px;
+		margin-bottom: 0px;
+	}
+
+	.txt{
+		width: auto;
+		margin-top: 6px;
+	}
+
+	.btn:hover{
+		background-color: #69F0AE;
+	}
+
+	.btn{
+		width: 220px;
+		height: 30px;
+		background-color: #00C853;
+		color: white;
+		box-sizing: border-box;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+
+</style>
+
+<body>
+	<main>
+		<div id="bigbox">
+			<div class="posi">
+				<h4 class="txt">Digite o valor 1</h4>
+				<input id="v1" type="text" class="txtbox">
+			</div>
+			<div class="posi">
+				<h4 class="txt">Digite o valor 2</h4>
+				<input id="v2" type="text" class="txtbox">
+			</div>
+			<div class="posi">
+				<h4 class="txt">Informe o resultado</h4>
+				<input id="v3" type="text" class="txtbox">
+			</div>
+			<div>
+				<input type="button" class="btn"
+				id="soma" value="CONFIRMAR RESULTADO">
+				<span id="resultado"></span>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

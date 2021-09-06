@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: red;
+	font-family: verdana, arial, cursive;
+	font-size: 12px;
+}
+
+header{
+	width: 100%;
+	height: 180px;
+	background-color: #00695C;
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+main{
+	background-color: #EEEEEE;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu{
+	width: 100vw;
+	border: 2pxs solid #66BB6A;
+	list-style: none;
+	background-color: #66BB6A;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.menu li{ /*define cada btn indv.*/
+	display: flex;
+	justify-content: center;
+}
+
+.menu li a{ /*define todos os btn como um todo*/
+	color: #000;
+	font-family: verdana, arial, cursive;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+.menu li a:hover{
+	background-color: #A5D6A7;
+	color: #004D40;
+}
+
+#principal{
+	width: 100%;
+	height: auto;
+	background-color: #ECEFF1;
+}
+
+#algn-txt{
+	padding: 0;
+	margin: 10px 100px 10px 100px;
+}
+
+p{
+	margin: 50px;
+	font-family: verdana, arial, cursive;
+	font-size: 16px;
+	margin: 40px 100px 40px 100px;
+}
+
+.seminario{
+	margin: 20px 0 0 100px;
+	font-family: verdana, arial, cursive;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.titulo{
+	margin: 20px 0 0 100px;
+	font-family: verdana, arial, cursive;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#red{
+	color: red;
+}
+
+.align{
+	width: 80%;
+	height: auto;
+	margin: 20px 100px 10px 100px;
+	padding: 10px;
+	border: 1px solid #00695C;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.ajuste{
+	width: 80%;
+	height: auto;
+	margin: 20px 100px 20px 100px;
+	padding: 10px;
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bold{
+	font-family: verdana, arial, cursive;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px 20px 10px 0;
+}
+
+.roda-pe{
+	width: 100%;
+	height: 80px;
+	background-color: #00695C;
+}
+
+#copyright-note{
+	font-family: verdana, arial, cursive;
+	font-size: 16px;
+	color: #EEEEEE;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#titulo-principal{
+	font-family: Roboto Slab;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
+
+#subtitulo{
+	font-family: Roboto Slab;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+img{
+	width: 200px;
+	height: 120px;
+	margin: 10px 0 0 100px;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#central{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 700px){
+		main, header, menu{
+			flex-direction: column;
+		}
